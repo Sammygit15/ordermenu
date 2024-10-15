@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>OrderWebpage</title>
+</head>
+
+<body>
+  <h1>5 Star Munich</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+      <tr>
+        <td>Sauerbraten (Braised Beef Roast)</td>
+        <td>€22.50</td>
+        <td><img class="menu-image" src="https://pretzelandme.blog/wp-content/uploads/2022/06/Sauerbraten.jpg"
+            alt="Sauerbraten"></td>
+      </tr>
+      </tr>
+      <td>Wiener Schnitzel (Breaded Veal Cutlet)</td>
+      <td>€18.90</td>
+      <td><img class="menu-image" src="https://honest-food.net/wp-content/uploads/2012/12/wiener-schnitzel.jpg"
+          alt="Yum"></td>
+      </tr>
+      <td>Bratwurst with Sauerkraut</td>
+      <td>€14.50</td>
+      <td><img class="menu-image"
+          src="https://www.budgetbytes.com/wp-content/uploads/2021/10/Bratwurst-and-Sauerkraut-2.jpg" alt="Interesting">
+      </td>
+      <tr>
+        <td>Käsespätzle (Cheesy Egg Noodles)</td>
+        <td>€12.00</td>
+        <td><img class="menu-image"
+            src="https://dirndlkitchen.com/wp-content/uploads/2023/02/kaesespaetzle-recipe-german-cheese-spaetzle-dirndl-kitchen21.jpg"
+            alt="Cheesy"></td>
+
+      </tr>
+      <tr>
+        <td>Rinderroulade (Beef Rolls)</td>
+        <td>€19.80</td>
+        <td><img class="menu-image" src="https://www.jocooks.com/wp-content/uploads/2020/01/beef-rouladen-1-20-1.jpg"
+            alt="Popular"></td>
+      </tr>
+
+    </tbody>
+    <caption>Food Menu</caption>
+  </table>
+  <form action="/">
+    <section id="order-form">
+      <h2>Place your order</h2>
+      <form action="/submit-order" method="POST">
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+
+        <label for="phoneNumber">Phone Number:</label><br>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <h2>Select food items</h2>
+        </label>Select :</label><br>
+        <input type="checkbox" id="sauerbraten" name="foodItem" value="Sauerbraten">
+        <label for="sauerbraten">Sauerbraten (Braised Beef Roast) - €22.50</label><br>
+        <input type="checkbox" id="schnitzel" name="foodItem" value="Wiener Schnitzel">
+        <label for="schnitzel">Wiener Schnitzel (Breaded Veal Cutlet) - €18.90</label><br>
+        <input type="checkbox" id="bratwurst" name="foodItem" value="Bratwurst">
+        <label for="bratwurst">Bratwurst with Sauerkraut - €14.50</label><br>
+        <input type="checkbox" id="kaesespaetzle" name="foodItem" value="Kaesespaetzle">
+        <label for="kaesespaetzle">Käsespätzle (Cheesy Egg Noodles) - €12.00</label><br>
+        <input type="checkbox" id="rinderroulade" name="foodItem" value="Rinderroulade">
+        <label for="rinderroulade">Rinderroulade (Beef Rolls) - €19.80</label><br><br>
+
+
+
+        <label for="quantity">Quantity:</label><br>
+        <select id="quantity" name="quantity" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br><br>
+
+
+
+        <label for="address">Delivery Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+
+
+  </form>
+</body>
+
+</html>
